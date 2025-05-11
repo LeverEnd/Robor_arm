@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="teszt_robot">
+  <link name="alap_link"/>
+  <ros2_control name="GazeboTesztRendszer" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="kamu_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+  </ros2_control>
+</robot>
