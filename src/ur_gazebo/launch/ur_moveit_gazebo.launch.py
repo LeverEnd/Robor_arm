@@ -89,18 +89,7 @@ def generate_launch_description():
         parameters=[
             moveit_config.robot_description,
             ros2_controllers_path,
-            {"use_sim_time": True},
-        #    {
-        #        "ur3e_with_gripper": {
-        #            "ros__parameters": {
-        #                "use_sim_time": True,
-        #                "ros2_control": {
-        #                    "type": "system",
-        #                "    hardware_plugin": "gz_ros2_control/GazeboSystem"
-        #                }
-        #            }
-        #        }
-        #    }
+            {"use_sim_time": True}
         ],
         arguments=["--ros-args", "--log-level", "debug"],
     )
