@@ -1,7 +1,7 @@
 # This config file is used by ros2_control
 controller_manager:
   ros__parameters:
-    update_rate: 100  # Hz
+    update_rate: 100 
     use_sim_time: true
 
     joint_state_broadcaster:
@@ -12,19 +12,6 @@ controller_manager:
 
     gripper_controller:
       type: position_controllers/GripperActionController
-
-#ur3e_with_gripper:  # Ez a robot neve a Gazebo-ban
-#  ros__parameters:
-#    use_sim_time: true
-
-    # Gazebo hardware interface típusa
-#    gazebo:
-#      use_sim_time: true
-
-    # Ez a kritikus rész - a hardware interface típusa
-#    ros2_control:
-#      type: system
-#      hardware_plugin: gz_ros2_control/GazeboSystem
 
 joint_state_broadcaster:
   ros__parameters:
